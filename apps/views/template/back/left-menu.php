@@ -8,38 +8,30 @@
                     </div>
                 </form>
                 <div class="clearfix"></div>
-                <!--- Profile -->
-                <div class="profile-info">
-                    <div class="col-xs-4">
-                      <a href="profile.html" class="rounded-image profile-image"><img src="images/users/user-100.jpg"></a>
-                    </div>
-                    <div class="col-xs-8">
-                        <div class="profile-text">Welcome <b>Jane</b></div>
-                        <div class="profile-buttons">
-                          <a href="javascript:;"><i class="fa fa-envelope-o pulse"></i></a>
-                          <a href="#connect" class="open-right"><i class="fa fa-comments"></i></a>
-                          <a href="javascript:;" title="Sign Out"><i class="fa fa-power-off text-red-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--- Divider -->
+                
                 <div class="clearfix"></div>
                 <hr class="divider" />
                 <div class="clearfix"></div>
                 <!--- Divider -->
                 <div id="sidebar-menu">
-                    <ul>
+                    <ul>                    
+                    <li>
+                        <a href='<?= base_url() ?>back/dashboard'><i class='icon-home-3'></i><span>Dashboard</span></a>
+                    </li>
                     <li class='has_sub'>
-                        <a href='javascript:void(0);'><i class='icon-home-3'></i><span>Dashboard</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                        <a href='javascript:void(0);'><i class='icon-home-3'></i><span>New</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>
                         </a>
                             <ul>
                                 <li>
-                                    <a href='index.html' class='active'><span>Dashboard v1</span></a>
+                                    <a href='<?= base_url() ?>back/user' class='active'><span>User</span></a>
                                 </li>
                                 <li>
-                                    <a href='index2.html'><span>Dashboard v2</span></a>
+                                    <a href='<?= base_url() ?>back/order'><span>Order</span></a>
                                 </li>
                             </ul>
+                    </li>
+                    <li>
+                        <a href='<?= base_url() ?>back/dashboard'><i class='icon-home-3'></i><span>Third Party</span></a>
                     </li>
                     <li class='has_sub'>
                         <a href='javascript:void(0);'><i class='icon-feather'></i><span>UI Elements</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>

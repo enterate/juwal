@@ -9,7 +9,7 @@ class My_Admin extends My_Controller{
 
     function __construct(){
         parent::__construct();
-        // if ($this->session->userdata('arch')==TRUE) {
+        if ($this->session->userdata('jbozz')==TRUE) {
         //     //
         //     $this->load->library('breadcrumbs');
         //     $this->load->model('User_model','user');
@@ -25,11 +25,11 @@ class My_Admin extends My_Controller{
         //     $this->breadcrumbs->push(ucwords($this->uri->segment(2)), '$this->uri->segment(1)/$this->uri->segment(2)');
         //     $this->breadcrumbs->unshift("<a href=".site_url('dashboard').">Dashboard</a> /", '/');  
             
-        // }        
-        // else{
-        //     redirect('arkmin');
-        //     $this->session->sess_destroy(); 
-        // }
+        }        
+        else{
+            redirect('jwl');
+            $this->session->sess_destroy(); 
+        }
     }
 
     

@@ -7,7 +7,7 @@ class Login extends CI_Controller {
 	
 	function __construct(){
 		parent::__construct();
-		//$this->load->model('User_model','user');
+		$this->load->model('User_model','user');
 	}
 
 	public function index()
@@ -32,21 +32,21 @@ class Login extends CI_Controller {
 				if($this->user->check_user()){
 					$this->session->set_flashdata('sukses', "Welcome.");
 					$this->session->set_userdata('isLogin',TRUE);
-					$this->session->set_userdata('arch', generateHash(curtime()));
-					redirect('apps');
+					$this->session->set_userdata('jbozz', generateHash(curtime()));
+					redirect('back/dashboard');
 				}
 				else{
 					$this->session->set_flashdata('gagal', "Login failed or your email admin is not verified.");
-					redirect('arkmin');
+					redirect('jwl');
 				}
 			}	
 			else{				
              	$this->session->sess_destroy();                 
-				redir("Anda sudah login. Proses logout...","arkmin");
+				redir("Anda sudah login. Proses logout...","jwl");
 			}		
 		}
 		else{			
-			redirect('arkmin');
+			redirect('jwl');
 		}
 	}
 

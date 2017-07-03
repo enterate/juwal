@@ -105,19 +105,20 @@
 			<div class="login-wrap animated flipInX">
 				<div class="login-block">
 					<img src="images/users/default-user.png" class="img-circle not-logged-avatar">
-					<form role="form" action="<?= base_url() ?>admin/dashboard">
+					
+					<?php echo form_open(base_url(uri_string()), array('method' => 'POST', 'id' =>'createform')); ?>
 						<div class="form-group login-input">
 						<i class="fa fa-user overlay"></i>
-						<input type="text" class="form-control text-input" placeholder="Username">
+						<input type="text" class="form-control text-input" placeholder="Username" name="username">
 						</div>
 						<div class="form-group login-input">
 						<i class="fa fa-key overlay"></i>
-						<input type="password" class="form-control text-input" placeholder="********">
+						<input type="password" class="form-control text-input" placeholder="********" name="password">
 						</div>
 						
 						<div class="row">
 							<div class="col-sm-6">
-							<button type="submit" class="btn btn-success btn-block">LOGIN</button>
+							<button type="submit" class="btn btn-success btn-block" id="submit" value="1" name="sign">LOGIN</button>
 							</div>
 							<div class="col-sm-6">
 							<a href="register.html" class="btn btn-default btn-block">Forgot Password</a>
@@ -165,3 +166,13 @@
 	<script src="assets/js/init.js"></script>
 	</body>
 </html>
+
+	<?php $this->load->view('template/back/notif') ?>
+	<script type="text/javascript">
+		var csrf_value = '<?php echo $this->security->get_csrf_hash(); ?>';
+		$('#createform').on('submit', function(e)
+	    {    	
+	    	$.post( csrf_value, $('#createform').serialize(), function( response ) {		    
+			}, 'json' );       
+	    });	   
+	</script>

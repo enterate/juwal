@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Dashboard | Coco - Responsive Bootstrap Admin Template</title>   
+        <title>Dashboard | Juwal</title>   
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="description" content="">
-        <meta name="keywords" content="coco bootstrap template, coco admin, bootstrap,admin template, bootstrap admin,">
+        <meta name="keywords" content="Juwal dot com">
         <meta name="author" content="Huban Creative">
 
         <!-- Base Css Files -->
