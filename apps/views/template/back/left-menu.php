@@ -23,7 +23,8 @@
                         </a>
                             <ul>
                                 <li>
-                                    <a href='<?= base_url() ?>back/user' class='active'><span>User</span></a>
+                                    <!-- <a href='<?= base_url() ?>back/user' class='active'><span>User</span></a> -->
+                                    <a href='<?= base_url() ?>back/user' ><span>User</span></a>
                                 </li>
                                 <li>
                                     <a href='<?= base_url() ?>back/order'><span>Order</span></a>
@@ -34,47 +35,43 @@
                         <a href='<?= base_url() ?>back/dashboard'><i class='icon-home-3'></i><span>Third Party</span></a>
                     </li>
                     <li class='has_sub'>
-                        <a href='javascript:void(0);'><i class='icon-feather'></i><span>UI Elements</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                        <a href='javascript:void(0);'><i class='icon-feather'></i><span>Appearance</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>
                         </a>
                         <ul>
                             <li>
-                                <a href='alerts.html'><span>Alerts</span></a>
+                                <a href='alerts.html'><span>Pages</span></a>
                             </li>
-                            <li><a href='buttons.html'><span>Buttons</span></a>
+                            <li><a href='buttons.html'><span>Category</span></a>
                             </li>
-                            <li><a href='calendar.html'><span>Calendar</span></a>
+                            <li><a href='calendar.html'><span>Menu</span></a>
                             </li>
-                            <li><a href='grid.html'><span>Grid</span></a>
-                            </li>
-                            <li><a href='icons.html'><span>Icons</span></a>
-                            </li>
-                            <li><a href='modals.html'><span>Modals</span></a></li>
+                            
                         </ul>
-                                                <div class="clearfix"></div>
+                    <div class="clearfix"></div>
                 </div>
             <div class="clearfix"></div>
             <div class="portlets">
                 <div id="chat_groups" class="widget transparent nomargin">
-                    <h2>Chat Groups</h2>
+                    <h2>Social Media</h2>
                     <div class="widget-content">
                         <ul class="list-unstyled">
-                            <li><a href="javascript:;"><i class="fa fa-circle-o text-red-1"></i> Colleagues</a></li>
-                            <li><a href="javascript:;"><i class="fa fa-circle-o text-blue-1"></i> Family</a></li>
-                            <li><a href="javascript:;"><i class="fa fa-circle-o text-green-1"></i> Friends</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-circle-o text-red-1"></i> Social Page</a></li>
+                            <!-- <li><a href="javascript:;"><i class="fa fa-circle-o text-blue-1"></i> Family</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-circle-o text-green-1"></i> Friends</a></li> -->
                         </ul>
                     </div>
                 </div>
 
                 <div id="recent_tickets" class="widget transparent nomargin">
-                    <h2>Recent Tickets</h2>
+                    <h2>Recent User</h2>
                     <div class="widget-content">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="javascript:;">My wordpress blog is broken <span>I was trying to save my page and...</span></a>
+                                <a href="javascript:;">Fatchul Amin</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="javascript:;">Server down, need help!<span>My server is not responding for the last...</span></a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>

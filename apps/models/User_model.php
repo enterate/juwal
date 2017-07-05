@@ -63,26 +63,27 @@ class User_model extends Model_Main{
         }
         $fields = array(                        
               'id_user' => curtime(), 
-              'id_school' => $sch, 
+              
               'email' => $this->input->post('email'), 
               'role' => $this->input->post('role'),  
               'date_join' => timestamp(),
               'nama' => $this->input->post('nama'),
               'dob' => $this->input->post('dob'),
-              'meta' => $this->input->post('token'),
+              
               'password' => generateHash($this->input->post('password')), 
               'gender' => $this->input->post('gender'),
               'profile' => $this->input->post('profile'),              
+              'last_login' => timestamp(),
               'token_reg' => has(50), 
               'token_forgot_pass' => has(49),               
               'phone' => $this->input->post('kontak'), 
-              'level' => $this->input->post('kelas'), 
-              'address' => $this->input->post('alamat'),
-              'facebook_url' => $this->input->post('facebook'),
-              'pict_name' => $this->input->post('role'),
+              
+              // 'address' => $this->input->post('alamat'),
+              // 'facebook_url' => $this->input->post('facebook'),
+              // 'pict_name' => $this->input->post('role'),
               'is_subscribe' => '1', 
               'is_valid' => $val,
-              'is_read' => $is_read,        
+              // 'is_read' => $is_read,        
         );
         return $fields;
     } 
