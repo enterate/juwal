@@ -6,6 +6,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('front/home');
+		$data['body']="front/home";			
+		$this->load->view("template/front/core",$data);		
 	}
 }

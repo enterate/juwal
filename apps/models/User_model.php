@@ -140,7 +140,6 @@ class User_model extends Model_Main{
         $this->db->from('user');
         $this->db->where('email', $u);                
         $this->db->where('role','0');
-        $this->db->or_where('role','1');
         $this->db->limit(1);
         $query = $this->db->get();
         if ($query->num_rows() > 0) {

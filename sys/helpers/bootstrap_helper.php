@@ -6,33 +6,30 @@ if ( ! function_exists('test_method'))
         return "2";
     }
     function col_form(){
-        return "8";
+        return "10";
     }
-    function open_bootstrap(){
+    function open_bootstrap($h=""){
         return "
             <?php
             if (!defined('BASEPATH'))
               exit('No direct script access allowed');
             ?>
-            <div class='container-default'>
-              <div class='row'>
-                  <div class='col-md-12'>
-                    <div class='panel panel-default'>
-                      <div class='panel-title'>
-                        <ul class='panel-tools'>
-                          <li><a class='icon minimise-tool'><i class='fa fa-minus'></i></a></li>
-                          <li><a class='icon expand-tool'><i class='fa fa-expand'></i></a></li>              
-                        </ul>
-                      </div>
-                      <div class='panel-body'>
+            <div class='widget'>
+              <div class='widget-header transparent'>
+                <h2><strong>".$h."</strong> </h2>
+                <div class='additional-btn'>
+                  <a href='#' class='hidden reload'><i class='icon-ccw-1'></i></a>
+                  <a href='#' class='widget-toggle'><i class='icon-down-open-2'></i></a>
+                  <a href='#' class='widget-close'><i class='icon-cancel-3'></i></a>
+                </div>
+              </div>
+              <div class='widget-content padding'>
         ";
     }
     function close_bootstrap(){
         return "
-                </div>
-              </div>
-          </div>
-        </div>
+               </div>
+               </div>
         ";
     }
     function t_text($label,$name,$value="",$id=""){
@@ -129,7 +126,7 @@ if ( ! function_exists('test_method'))
             <div class='form-group' style='display:".$display."'>
                 <label class='col-sm-".col_label()." control-label form-label'>".$label."</label>
                     <div class='col-sm-".col_form()."'>
-                        <input type='file'  id='".$id."' name='".$name."' ".$req.">           
+                        <input type='file'  id='".$id."' name='".$name."' ".$req." title='Select file' class='btn btn-default'>           
                         <span class='help-block'></span>
                     </div>                            
             </div>
@@ -280,7 +277,7 @@ if ( ! function_exists('test_method'))
             <div class='form-group'>
                 <label class='col-sm-".col_label()." control-label form-label'>".$label."</label>
                     <div class='col-sm-".col_form()."'>
-                        <input type='submit' name='".$name."' class='btn btn-default' value='".$value."' id='".$id."'>       
+                        <input type='submit' name='".$name."' class='btn btn-primary' value='".$value."' id='".$id."'>       
                         <span class='help-block'></span>
                     </div>                            
             </div>

@@ -6,7 +6,7 @@ class Login extends My_Controller {
 	function __construct(){
 		parent::__construct();
 		// $this->load->model('School_model','school');
-		// $this->load->model('User_model','user');
+		$this->load->model('User_model','user');
 		// $this->load->model('cms/Cms_menu_model','menu');
 	}
 
@@ -16,9 +16,9 @@ class Login extends My_Controller {
 		// $this->track();
 		// $data=$this->information();				
 		// $this->get_redirect_cookies();
-		if ($this->input->post('btn-login')) {
+		if ($this->input->post('login')) {
 			$session_id=has(28);
-			$session_data=$this->sesi->get_all_field();
+			//$session_data=$this->sesi->get_all_field();
 			$session_data['id']=$session_id;
 			$username=$this->input('uname');
 			$password=$this->input('upassw');
@@ -28,7 +28,7 @@ class Login extends My_Controller {
 					if($this->user->check_login()){
 						$this->session->set_userdata('isLogin',TRUE);
 						$this->session->set_flashdata('sukses', "Selamat Datang.");						
-						$this->session->set_userdata('__sch_id', $this->school->specific_column('id_school','email',$this->input->post('uname')));
+						//$this->session->set_userdata('__sch_id', $this->school->specific_column('id_school','email',$this->input->post('uname')));
 
 						$role=$this->user->specific_column('role','email',$this->input->post('uname'));
 						$this->session->set_userdata('session_id',$session_id);	
@@ -38,37 +38,32 @@ class Login extends My_Controller {
 						$session_data['browser']=$this->getBrowser();
 						if ($role==='0') {									
 							$this->session->set_userdata('__usr_teacher_', $this->input->post('uname'));
-							$this->session->set_userdata('__id_school_', $this->user->specific_column('id_school','email',$this->input->post('uname')));
+							//$this->session->set_userdata('__id_school_', $this->user->specific_column('id_school','email',$this->input->post('uname')));
 
 							$this->sesi->insert_to($session_data);									
 							start_cokkies($username,$password,$role);
-							redirect('g/dashboard');				
+							
+							redirect('user/dashboard');				
 						}
-						elseif ($role==='1') {																		
-							$this->session->set_userdata('__usr__', $this->input->post('uname'));
-							$this->sesi->insert_to($session_data);
-							start_cokkies($username,$password,$role);
-							redirect('u/dashboard');
-
-						}
+						
 						else{
 							$this->session->set_flashdata('gagal', "Login failed.");
-							redirect('login');
+							redirect('front/loging');
 						}
 
 					}
 					else{
 						$this->session->set_flashdata('gagal', "Login failed.");
-						redirect('login');
+						redirect('front/loginr');
 					}
 				}else{
 					$this->session->sess_destroy();                 
-					redir("Anda sudah login. Proses logout...","login");
+					redir("Anda sudah login. Proses logout...","front/login");
 				}
 			}
 			else{
 				$this->session->set_flashdata('gagal', "Anda sudah login di browser lain. <a href='".base_url()."logout'>Logout</a>");
-				redirect('login');
+				redirect('front/loginh');
 			}
 		}
 		else{
@@ -76,6 +71,25 @@ class Login extends My_Controller {
 			//$data['parent_menu'] = $this->menu->get_parent_menu('up',1);			
 
 			$this->load->view("template/front/core",$data);	
+		}
+	}
+
+	// 
+	function register(){
+		if ($this->input->post('daftar')) {
+			$data = array(
+				'id_user' => rands(), 
+				'email' => $this->input('email'), 
+				'role' => '0', 
+				'phone' => $this->input('hp'), 
+				'password' => generateHash($this->input->post('password')), 
+				);
+			$this->user->insert_to($data);
+			echo "Sukses";
+		}
+		else{
+			$data['body']="front/register";
+			$this->load->view("template/front/core",$data);
 		}
 	}
 	/*
@@ -122,7 +136,7 @@ class Login extends My_Controller {
 			redirect('arkmin');
 		}
 		else{
-			redirect('login');
+			redirect('front/login');
 		}
 		
 		

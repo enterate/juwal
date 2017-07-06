@@ -1362,9 +1362,8 @@ form label {
 .form-control {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  height: 54px;
-  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  
   font-weight: 300;
 }
 .form-control:active, .form-control:focus {
