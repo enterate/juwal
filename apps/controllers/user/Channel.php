@@ -1,9 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-//open dashboard admin
-//routing action
-
 class Channel extends My_User {
 
 	

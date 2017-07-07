@@ -17,16 +17,8 @@ class Dashboard extends My_User {
 
 	public function index()
 	{
-		// $data=$this->panel();
-		// $data['last_login']=$this->user->get_all_not_admin('last_login','DESC');
-		// $data['artikel']=$this->cms_post->count_all();
-		// $data['course']=$this->course->count_all();
-		// $data['silabus']=$this->silabus->count_all();
-		// $data['school']=$this->school->count_all();
-		// $data['guru']=$this->user->count_by('role','0');
-		// $data['siswa']=$this->user->count_by('role','1');
-		// $data['course_fav']=$this->course->course_favourite();
-		$data['body']="back/dashboard";	
+		
+		$data['body']="user/dashboard";	
 		$this->load->view("template/user/core",$data);
 	}
 	function setting(){

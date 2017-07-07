@@ -16,23 +16,23 @@
                 <div id="sidebar-menu">
                     <ul>                    
                     <li>
-                        <a href='<?= base_url() ?>back/dashboard'><i class='icon-home-3'></i><span>Beranda</span></a>
+                        <a href='<?= base_url() ?>user/dashboard'><i class='icon-home-3'></i><span>Beranda</span></a>
                     </li>
                     
                     <li>
-                        <a href='<?= base_url() ?>user/order'><i class='icon-home-2'></i><span>Order</span></a>
+                        <a href='<?= base_url() ?>user/order'><i class="fa fa-adjust"></i><span>Order</span></a>
                     </li>
                     <li>
-                        <a href='<?= base_url() ?>user/produk'><i class='icon-home-3'></i><span>Produk</span></a>
+                        <a href='<?= base_url() ?>user/produk'><i class="fa fa-anchor"></i><span>Produk</span></a>
                     </li>
                     <li>
-                        <a href='<?= base_url() ?>user/statistik'><i class='icon-home-3'></i><span>Statistik</span></a>
+                        <a href='<?= base_url() ?>user/statistik'><i class="fa fa-archive"></i><span>Statistik</span></a>
                     </li>
                     <li>
-                        <a href='<?= base_url() ?>user/promosi'><i class='icon-home-3'></i><span>Promosi</span></a>
+                        <a href='<?= base_url() ?>user/promosi'><i class="fa fa-bar-chart-o"></i></i><span>Promosi</span></a>
                     </li>
                     <li>
-                        <a href='<?= base_url() ?>user/channel'><i class='icon-home-3'></i><span>Channel</span></a>
+                        <a href='<?= base_url() ?>user/channel'><i class="fa fa-bell"></i><span>Channel</span></a>
                     </li>
                     
                     <div class="clearfix"></div>

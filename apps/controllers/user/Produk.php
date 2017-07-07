@@ -13,4 +13,8 @@ class Produk extends My_User {
 		$data['body']="user/produk/all";	
 		$this->load->view("template/user/core",$data);
 	}
+	function add(){
+		$data['body']="user/produk/add";	
+		$this->load->view("template/user/core",$data);	
+	}
 }
