@@ -294,6 +294,51 @@ if ( ! function_exists('test_method'))
       return tooltip("Cara edit?","Bisa dibuka di dokumentasi Bootstrap dengan cara menambahkan class di dalam salah satu tag di menu Source dalam CKEditor. eg: class=btn btn-primary (*gunakan petik)");
     } 
     
+    function generate_data(){
+
+    }
+    function header_table_open($insert=""){
+      return "
+          <div class='row'>
+            <div class='col-md-12'>
+              <div class='widget'>
+                <div class='widget-content'>
+                  <div class='data-table-toolbar'>
+                    <div class='row'>
+                      <div class='col-md-4'>              
+                      </div>
+                      <div class='col-md-8'>
+                        <div class='toolbar-btn-action'>
+                          <a href='".base_url()."".$insert."/add' class='btn btn-success'><i class='fa fa-plus-circle'></i> Add new</a>       
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='table-responsive'>
+      ";
+    }
+
+    function set_column(){
+      $args = func_get_args();
+      echo "<table data-sortable class='table table-hover table-striped'>";
+      echo "<thead><tr>";
+      foreach ($args as $arg){
+        echo "<th>".$arg."</th>";
+      }
+      echo "</tr></thead><tbody>";
+    }
+    function header_table_close(){
+      return "
+            </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      ";
+    }   
     
 
 }

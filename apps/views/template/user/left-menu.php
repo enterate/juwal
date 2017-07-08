@@ -22,9 +22,20 @@
                     <li>
                         <a href='<?= base_url() ?>user/order'><i class="fa fa-adjust"></i><span>Order</span></a>
                     </li>
-                    <li>
-                        <a href='<?= base_url() ?>user/produk'><i class="fa fa-anchor"></i><span>Produk</span></a>
+                    <li class='has_sub'>
+                        <a href='javascript:void(0);'><i class="fa fa-anchor"></i><span>Produk</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                            <ul>
+                                <li>
+                                    <!-- <a href='<?= base_url() ?>back/user' class='active'><span>User</span></a> -->
+                                    <a href='<?= base_url() ?>user/produk' ><span>Produk List</span></a>
+                                </li>
+                                <li>
+                                    <a href='<?= base_url() ?>user/kategori'><span>Kategori</span></a>
+                                </li>
+                            </ul>
                     </li>
+                    
                     <li>
                         <a href='<?= base_url() ?>user/statistik'><i class="fa fa-archive"></i><span>Statistik</span></a>
                     </li>
