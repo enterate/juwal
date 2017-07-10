@@ -23,7 +23,6 @@
                         </a>
                             <ul>
                                 <li>
-                                    <!-- <a href='<?= base_url() ?>back/user' class='active'><span>User</span></a> -->
                                     <a href='<?= base_url() ?>back/user' ><span>User</span></a>
                                 </li>
                                 <li>

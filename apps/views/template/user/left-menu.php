@@ -20,7 +20,7 @@
                     </li>
                     
                     <li>
-                        <a href='<?= base_url() ?>user/order'><i class="fa fa-adjust"></i><span>Order</span></a>
+                        <a href='<?= base_url() ?>user/order'><i class="fa fa-adjust"></i><span>Order</span> <span class="label label-danger">Coming Soon</span></a>
                     </li>
                     <li class='has_sub'>
                         <a href='javascript:void(0);'><i class="fa fa-anchor"></i><span>Produk</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>
@@ -33,17 +33,20 @@
                                 <li>
                                     <a href='<?= base_url() ?>user/kategori'><span>Kategori</span></a>
                                 </li>
+                                <li>
+                                    <a href='<?= base_url() ?>user/media'><span>Media Management</span></a>
+                                </li>
                             </ul>
                     </li>
                     
                     <li>
-                        <a href='<?= base_url() ?>user/statistik'><i class="fa fa-archive"></i><span>Statistik</span></a>
+                        <a href='<?= base_url() ?>user/statistik'><i class="fa fa-archive"></i><span>Statistik <span class="label label-danger">Coming Soon</span></span></a>
                     </li>
                     <li>
-                        <a href='<?= base_url() ?>user/promosi'><i class="fa fa-bar-chart-o"></i></i><span>Promosi</span></a>
+                        <a href='<?= base_url() ?>user/promosi'><i class="fa fa-bar-chart-o"></i></i><span>Promosi <span class="label label-danger">Coming Soon</span></span></a>
                     </li>
                     <li>
-                        <a href='<?= base_url() ?>user/channel'><i class="fa fa-bell"></i><span>Channel</span></a>
+                        <a href='<?= base_url() ?>user/channel'><i class="fa fa-bell"></i><span>Channel <span class="label label-danger">Coming Soon</span></span></a>
                     </li>
                     
                     <div class="clearfix"></div>

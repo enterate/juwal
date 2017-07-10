@@ -14,7 +14,14 @@ class Produk extends My_User {
 		$this->load->view("template/user/core",$data);
 	}
 	function add(){
-		$data['body']="user/produk/add";	
-		$this->load->view("template/user/core",$data);	
+		if ($this->input->post('btn-save')) {
+			$this->Produk_model->insert_normal();
+			redirect('user/produk');
+		}
+		else{
+			$data['list_kategori']=$this->Kategori_model->get_all();
+			$data['body']="user/produk/add";	
+			$this->load->view("template/user/core",$data);	
+		}
 	}
 }

@@ -10,11 +10,18 @@ class Kategori extends My_User {
 
 	public function index()
 	{
+		$data['list']=$this->Kategori_model->get_all();
 		$data['body']="user/kategori/all";	
 		$this->load->view("template/user/core",$data);
 	}
 	function add(){
-		$data['body']="user/kategori/add";	
-		$this->load->view("template/user/core",$data);	
+		if ($this->input->post('btn-save')) {
+			$this->Kategori_model->insert_normal();
+			redirect('user/kategori');
+		}
+		else{
+			$data['body']="user/kategori/add";	
+			$this->load->view("template/user/core",$data);	
+		}
 	}
 }
