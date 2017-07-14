@@ -14,6 +14,8 @@
            opacity: 0;
        }
 </style>
+<script type="text/javascript" src="<?php echo base_url('source/js/dropzone/dropzone.min.js') ?>"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('source/css/dropzone.min.css') ?>">
 <?php echo open_bootstrap("Produk Baru"); ?>
 <?php echo form_open_multipart('',"class='form-horizontal'") ?> 
 <div class="col-sm-10 portlets">
@@ -43,11 +45,11 @@
 				<div class="form-group">
 					<label>Deskripsi</label>
 					
-					<textarea class="form-control ckeditor" name="deskripsi"></textarea>
+					<textarea class="form-control" name="deskripsi"></textarea>
 				</div>
 				<div class="form-group">
 					<label>Petunjuk Perawatan</label>					
-					<textarea class="form-control ckeditor" name="perawatan"></textarea>
+					<textarea class="form-control" name="perawatan"></textarea>
 				</div>
 				<div class="form-group">
 					<div class="row">
@@ -77,14 +79,61 @@
 						</div>
 					</div>
 				</div>
-				<div class="form-group">
-					<label class="control-label" id="captchaOperation">Foto</label>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="file_button_container"><input type="file" name="gambar[]" /></div>
-						</div>
+				
+				<div class='form-group'>
+					<label>Media</label>
+					<div>
+						<div role="tabpanel">
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Upload Gambar</a></li>
+								<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Pilih Foto</a></li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="home">
+									<div class="dropzone">
+										<div class="dz-message">
+											<h3> Klik atau Drop file disini</h3>
+										</div>
+									</div>    
+									<span class='help-block'></span>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="profile">
+									<span class="btn btn-warning btn-xs" onclick="reload_table()">REFRESH</span>
+									<br><br>
+									<div class="table-responsive">
+										<table id="table" class="table" cellspacing="0" width="100%">
+											<thead>
+												<tr>
+													<th>Thumbnail</th>					      
+													<th>Note</th>
+													<th>Mime</th>      
+													<th>Pilih</th>
+												</tr>
+											</thead>
+											<tbody>
+												 <?php if ($list<>0): ?>
+											      <?php foreach ($list as $key => $gal): ?>
+											        <?php 
+											          $link=gallery_base($gal->directory)."/".$gal->enc_name."_thumb".$gal->mime; 
+											        ?>
+											        <tr>
+											          
+											          <td><?php echo "<img src='".cek_mime($gal->mime,$link)."' class='img-thumb'>" ?></td>
+											          <td><?php echo $gal->note; ?></td>        
+											          <td><?php echo $gal->mime; ?></td>
+											          <td><?php echo $gal->file_name ?></td>
+											        </tr>
+											      <?php endforeach ?>
+											    <?php endif ?>
+											</tbody>  
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>  
 					</div>
 				</div>
+
 				<button type="submit" class="btn btn-primary" name="btn-save" value="1">Simpan</button>
 			</form>
 		</div>

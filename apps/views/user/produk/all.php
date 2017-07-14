@@ -60,8 +60,8 @@
 						<div class="col-md-8">
 							<div class="toolbar-btn-action">
 								<a class="btn btn-success" href="<?= base_url(); ?>user/produk/add"><i class="fa fa-plus-circle"></i> Add new</a>
-								<a class="btn btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-								<a class="btn btn-primary"><i class="fa fa-refresh"></i> Update</a>
+								<!-- <a class="btn btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
+								<a class="btn btn-primary"><i class="fa fa-refresh"></i> Update</a> -->
 							</div>
 						</div>
 					</div>

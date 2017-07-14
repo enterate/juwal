@@ -10,6 +10,7 @@ class Promosi extends My_User {
 
 	public function index()
 	{
+		$data=$this->information();
 		$data['body']="user/promosi/all";	
 		$this->load->view("template/user/core",$data);
 	}

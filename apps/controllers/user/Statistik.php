@@ -10,6 +10,7 @@ class Statistik extends My_User {
 
 	public function index()
 	{
+		$data=$this->information();
 		$data['body']="user/statistik/all";	
 		$this->load->view("template/user/core",$data);
 	}

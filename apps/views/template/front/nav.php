@@ -21,7 +21,11 @@
 					</ul>
 				</div>
 				<div class="col-xs-1 text-right">
-					<a href="<?= base_url() ?>front/login">Masuk</a>|<a href="<?= base_url() ?>front/login/register">Daftar</a>
+					<?php if ($this->session->userdata('__usr_jwl')==TRUE) {  ?>
+						<a href="<?= base_url() ?>user/dashboard">Dashboard</a>|<a href="<?= base_url() ?>user/account/logout">Logout</a>
+					<?php } else { ?>
+						<a href="<?= base_url() ?>front/login">Masuk</a>|<a href="<?= base_url() ?>front/login/register">Daftar</a>
+					<?php } ?>
 				</div>
 			</div>
 		</div>

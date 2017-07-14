@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
           <h2>Login</h2>
-          <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+          <p>Silahkan masukan email anda</p>
         </div>
         <!--  -->
       <div class="container">    
@@ -29,9 +29,6 @@
                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                   <input id="login-password" type="password" class="form-control" name="upassw" placeholder="Password">
                 </div>
-
-
-
                 <div class="input-group">
                   <div class="checkbox">
                     <label>
@@ -51,6 +48,7 @@
                   </div>
                 </div>
 
+                <?php $this->load->view('template/front/notifikasi') ?>
 
                 <div class="form-group">
                   <div class="col-md-12 control">

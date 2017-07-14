@@ -37,7 +37,7 @@ class Login extends My_Controller {
 						$session_data['id_user']=$id;
 						$session_data['browser']=$this->getBrowser();
 						if ($role==='0') {									
-							$this->session->set_userdata('__usr_teacher_', $this->input->post('uname'));
+							$this->session->set_userdata('__usr_jwl', $this->input->post('uname'));
 							//$this->session->set_userdata('__id_school_', $this->user->specific_column('id_school','email',$this->input->post('uname')));
 
 							$this->sesi->insert_to($session_data);									
@@ -48,13 +48,13 @@ class Login extends My_Controller {
 						
 						else{
 							$this->session->set_flashdata('gagal', "Login failed.");
-							redirect('front/loging');
+							redirect('front/login');
 						}
 
 					}
 					else{
 						$this->session->set_flashdata('gagal', "Login failed.");
-						redirect('front/loginr');
+						redirect('front/login');
 					}
 				}else{
 					$this->session->sess_destroy();                 
@@ -85,7 +85,9 @@ class Login extends My_Controller {
 				'password' => generateHash($this->input->post('password')), 
 				);
 			$this->user->insert_to($data);
-			echo "Sukses";
+			$this->session->set_userdata('isLogin',TRUE);
+			$this->session->set_userdata('__usr_jwl', $this->input->post('email'));
+			redir("Yay! Selamat datang di Juwal :D. <br>Pendaftaran berhasil.","user/dashboard");
 		}
 		else{
 			$data['body']="front/register";

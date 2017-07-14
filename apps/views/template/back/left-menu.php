@@ -19,19 +19,22 @@
                         <a href='<?= base_url() ?>back/dashboard'><i class='icon-home-3'></i><span>Dashboard</span></a>
                     </li>
                     <li class='has_sub'>
-                        <a href='javascript:void(0);'><i class='icon-home-3'></i><span>New</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>
+                        <a href='javascript:void(0);'><i class='icon-home-3'></i><span>Data</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>
                         </a>
                             <ul>
                                 <li>
                                     <a href='<?= base_url() ?>back/user' ><span>User</span></a>
                                 </li>
                                 <li>
-                                    <a href='<?= base_url() ?>back/order'><span>Order</span></a>
+                                    <a href='<?= base_url() ?>back/produk' ><span>Produk</span></a>
+                                </li>
+                                <li>
+                                    <a href='<?= base_url() ?>back/order'><span>Order</span> <span class="label label-danger">Coming Soon</span></a>
                                 </li>
                             </ul>
                     </li>
                     <li>
-                        <a href='<?= base_url() ?>back/dashboard'><i class='icon-home-3'></i><span>Third Party</span></a>
+                        <a href='<?= base_url() ?>back/dashboard'><i class='icon-home-3'></i><span>Third Party</span> <span class="label label-danger">Coming Soon</span></a>
                     </li>
                     <li class='has_sub'>
                         <a href='javascript:void(0);'><i class='icon-feather'></i><span>Appearance</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span>

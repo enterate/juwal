@@ -266,7 +266,7 @@ class My_Controller extends CI_Controller{
         }
     }
     
-    protected function information(){
+    protected function _information(){
         $this->load->model('cms/Cms_menu_model','menu');
         $this->load->model('User_model','user');
         $this->load->model('Subscribe_model','subscribe');

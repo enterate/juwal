@@ -19,7 +19,21 @@ class My_User extends CI_Controller{
         parent::__construct();
         
         $this->load->helper('cookie');
+        if ($this->session->userdata('__usr_jwl')==FALSE) {            
+            $this->session->sess_destroy(); 
+            redirect('front/login');
+        }
           
+    }
+
+    function information(){
+        $sesi=$this->session->userdata('__usr_jwl');
+        $this->id_user=$this->User_model->specific_column('id_user','email',$sesi);
+        $data = array(
+            'name'=> $this->User_model->specific_column('nama','id_user',$this->id_user),
+            );
+
+        return $data;
     }
     
     

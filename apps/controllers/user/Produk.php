@@ -10,10 +10,13 @@ class Produk extends My_User {
 
 	public function index()
 	{
+		$data=$this->information();
 		$data['body']="user/produk/all";	
 		$this->load->view("template/user/core",$data);
 	}
 	function add(){
+		$data=$this->information();
+		$data['list']=$this->Media_model->get_all();
 		if ($this->input->post('btn-save')) {
 			$this->Produk_model->insert_normal();
 			redirect('user/produk');

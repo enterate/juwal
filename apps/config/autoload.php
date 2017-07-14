@@ -133,4 +133,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array("Kategori_model","Produk_model");
+$autoload['model'] = array("Kategori_model","Produk_model","Media_model","User_model");

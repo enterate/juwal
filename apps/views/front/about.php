@@ -1,11 +1,11 @@
-<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image:url(http://www.virtualmediatechnologies.co.uk/wp-content/uploads/2014/11/commerce.png);">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>About Us</h1>
+							<h1>Tentang Juwal</h1>
 							
 						</div>
 					</div>
@@ -18,193 +18,20 @@
 		<div class="gtco-container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Why Choose Us</h2>
-					<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					
+					<p>
+						Banyaknya permasalahan yang dialami pelanggan perihal barang yang sampai tidak sesuai dengan ekspektasi berawal dari kurangnya deskripsi yang di berikan oleh Penjual. Hal ii menjadi penting, karena pemilihan dan pembuatan deskripsi juga merupakan hal yang sulit bagi seller. Disamping banyaknya barang yang harus di upload, waktu yang dibutuhkan dalam menulus deskripsi suatu produk juga tidak sebentar sehingga menyebabkan Penjual seringkali menulis deskripsi yang seadanya.
+					</p>
+					<p>
+						Oleh karena itu, kami menciptakan Juwal untuk embantu. Penjual dalam mengelola toko online, baik dalam deskripsi maupun ketersediaan stok barang Anda. Dengan Juwal, pelanggan akan mendapatkan informasi produk yang lengkap, dan toko Anda menjadi dan produk yag terpercaya bagi pelanggan. Selain itu anda engatur dan memantau produk anda di selurh Mrketplace yang anda miliki hanya dengan satu kali upload.
+					</p>
 				</div>
 			</div>
-			<div class="row animate-box">
-				<div class="col-md-6">
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Retina Ready</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-						</div>
-					</div>
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Fully Responsive</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-						</div>
-					</div>
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Ready To Use</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-				
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Retina Ready</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-						</div>
-					</div>
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Fully Responsive</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-						</div>
-					</div>
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Ready To Use</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 
-	<div class="gtco-cover gtco-cover-sm" style="background-image:url(images/img_bg_3.jpg);">
-		<div class="overlay"></div>
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Nice &amp; Simple</h1>
-							<h2>Free html5 templates Made by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a></h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="gtco-team" class="gtco-section">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Leadership</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_1.jpg" alt="Free HTML5 Templates by freehtml5.co">
-						<h3>Jean Smith</h3>
-						<strong class="role">Web Designer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_2.jpg" alt="Free HTML5 Templates by freehtml5.co">
-						<h3>Hush Raven</h3>
-						<strong class="role">Front-end Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_3.jpg" alt="Free HTML5 Templates by freehtml5.co">
-						<h3>Alex King</h3>
-						<strong class="role">Back-end Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_1.jpg" alt="Free HTML5 Templates by freehtml5.co">
-						<h3>Jean Smith</h3>
-						<strong class="role">Web Designer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_2.jpg" alt="Free HTML5 Templates by freehtml5.co">
-						<h3>Hush Raven</h3>
-						<strong class="role">Front-end Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_3.jpg" alt="Free HTML5 Templates by freehtml5.co">
-						<h3>Alex King</h3>
-						<strong class="role">Back-end Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
+	
 	
 
 	<div id="gtco-subscribe">

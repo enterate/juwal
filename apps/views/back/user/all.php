@@ -63,14 +63,32 @@ if (!defined('BASEPATH'))
       <th>Email</th>
       <th>Nama</th>
       <th>Tanggal Mendaftar</th>
-      <th>Level</th>
-      <th>Jenis Kelamin</th>
-      <th>Status</th>
-      <th>Asal Sekolah</th>
+      
       <th>Edit</th>
     </tr>
   </thead>
   <tbody>
+    <?php if ($list<>0): ?>
+      <?php foreach ($list as $key => $value): ?>
+        <tr>
+          <td>
+            <?php echo $key+1 ?>
+          </td>
+          <td>
+            <?php echo $value->email ?>
+          </td>
+          <td>
+            <?php echo $value->nama ?>
+          </td>
+          <td>
+            <?php echo $value->date_join ?>
+          </td>
+          <td>
+            Edit
+          </td>
+        </tr>
+      <?php endforeach ?>
+    <?php endif ?>
   </tbody>  
 </table>
 </div>

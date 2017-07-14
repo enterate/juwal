@@ -17,11 +17,12 @@ class Dashboard extends My_User {
 
 	public function index()
 	{
-		
+		$data=$this->information();
 		$data['body']="user/dashboard";	
 		$this->load->view("template/user/core",$data);
 	}
 	function setting(){
+		$data=$this->information();
 		$this->load->model('User_model','usr');
 		//$data['email']=$this->usr->specific_column('email','role','10');
 		if ($this->input('change')) {

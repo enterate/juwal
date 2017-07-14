@@ -17,6 +17,7 @@ class User extends My_Admin {
   * get from tb user both of student and teacher ( not school)
   */
 	function index(){
+		$data['list']=$this->User_model->get_all_not_admin('date_join','DESC');
 		$data['body']="back/user/all";	
 		$this->load->view(admin(),$data);
 	}
